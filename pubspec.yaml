@@ -1,0 +1,46 @@
+name: apk_perpus
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be ov
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# ----------------------------------------------------
+# ⬇️ PERUBAHAN DI SINI UNTUK MENGATUR ASSET GAMBAR
+flutter:
+  uses-material-design: true
+  
+  # Daftarkan folder/path tempat gambar Anda disimpan.
+  # Penting: Perhatikan indentasi (menggunakan spasi, BUKAN tab).
+  assets:
+  - assets/
+  
+  
+fonts:
+    - family: Roboto # Font yang Anda gunakan di tema
+      fonts:
+      asset: asset/fonts/Roboto-Regular.ttf # Ganti dengan path font Roboto Anda (jika ada)
+
+# ----------------------------------------------------
+# Aset gambar akan dimuat dari folder `assets/images/` dan `assets/`
